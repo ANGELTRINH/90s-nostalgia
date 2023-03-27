@@ -13,36 +13,41 @@ html{
 }
 
 body{
-    margin: 0px;
+    margin: 0;
 }
 
-img.one{
+img{
     width: 100%;
 }
 
 .logo{
     display: block;
     width: 160px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:0 auto;
 }
 
 .wrapper{
     max-width: 900px;
     margin: 0 auto;
-    padding: 1.5em 0, 1.5em 0;
-}
-
-header{
     padding: 1.5em;
 }
 
-nav li{
+header{
+    padding: 1.5em 0;
+}
+
+header nav{
+    text-align:center;
+}
+
+header nav ul{
     list-style-type: none;
     display: inline-block;
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+header nav ul li{
+    display:inline;
 }
 
 nav a{
@@ -85,7 +90,7 @@ a:focus{
     background-position: top center;
 }
 
-h1, .hero{
+h1{
     width: 75%;
     padding: 0, .5em;
     margin-left: auto;
@@ -100,7 +105,7 @@ h1, .hero{
     background-color: purple;
 }
 
-.trends > div > figure{
+section.trends figure{
     width: 22%;
     display: inline-block;
     text-align: center;
@@ -116,14 +121,14 @@ figcaption{
     padding: 2em 0em 2em 0em;
 }
 
-img > .icon{
+.icon img{
     width: 260px;
     float: left;
-    margin: 2em;
+    margin-right: 2em;
 }
 
-p > div:last-child{
-    float: none;
+.icon + p{
+    clear:left;
 }
 
 .featured-article{
@@ -135,8 +140,8 @@ footer{
     color: white;
 }
 
-p > footer{
-    margin-left: auto;
-    margin-right: auto;
+footer .wrapper{
     text-align: center;
+    padding: 8px,0;
+    padding:8px 0;
 }
